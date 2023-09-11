@@ -3,4 +3,4 @@
 
  Gerenciamento de Repositórios!
 
- <a href="https://www.youtube.com/watch?v=bUKtjtyAuHw">Executar música</a>
+ <a href="https://www.youtube.com/watch?v=bUKtjtyAuHw" target="_blank">Executar música</a>
