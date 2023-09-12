@@ -1,0 +1,41 @@
+@charset "UTF 08";
+
+body{
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+    text-shadow: 1px 1x 5px rgba(0, 0, 0, 0.404);
+}
+
+body  div {
+    background-image: linear-gradient(to right, rgb(9,99,24), rgb(18,121,36), rgb(9,99,24));
+    color: white;
+    font-size: 20px;
+    min-width: 330px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+    border-radius: 5px;
+}
+
+
+.btn 
+{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+       
