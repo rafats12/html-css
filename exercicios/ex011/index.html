@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1> 
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+     <picture>
+        <source media="(max-width:750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width:1200px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="imagem flexível"> <!--Essa ordem é muito importante-->
+     </picture>
+
+     <h1>Reproduzindo áudios</h1>
+     <p>Vamos agora aprender a reproduzir áudios no HTML5</p>
+     <audio src="midias/guanacast-33.mp3" controls autoplay></audio><!--Essa forma não é muito recomendado-->
+     <p>Outra forma melhor de colocar áudios que suportem outros formatos</p>
+     <audio preload="metadata" autoplay controls loop> 
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <p>Seu navegador não suporta o formato do áudio. Baixe <a href="midias/guanacast-33.mp3">aqui</a></p> <!--Essa ordem é muito importante, pq se nenhum formato abrir no navegador, vai aparecer a mensagem do parágrafo-->
+     </audio>
+</body>
+</html>
