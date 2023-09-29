@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -20,11 +21,20 @@
             background-color: gray;
             color: white;
         }
+        tbody > tr:nth-child(2n){
+            background-color: gainsboro;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
 <!--Anatomia para tabelas grandes
 TABLE
+    CAPTION - cabeçalho
     THEAD
         TR,TD,TH
     TBODY
@@ -35,10 +45,11 @@ TABLE
 <h1>Uso de Tabelas Grandes</h1>
 
 <table>
+    <caption>Tabela de população</caption>
     <thead>
         <tr>
             <th>Estado</th>
-            <th>População</th>
+            <th scope="col" style="width: 50px;">População</th>
         </tr>
     </thead>
 
@@ -47,11 +58,87 @@ TABLE
             <td>São Paulo</td>
             <td>49.000.000</td>
         </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td>49.000.000</td>
+        </tr>
     </tbody>
 
     <tfoot>
         <tr>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td>000000</td>
         </tr>
     </tfoot>
